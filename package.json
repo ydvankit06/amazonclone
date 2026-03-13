@@ -1,0 +1,30 @@
+{
+  "name": "amazon-clone-monorepo",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Full-stack Amazon-style e-commerce clone with React/Vite frontend and Express/PostgreSQL backend.",
+  "scripts": {
+    "dev": "npm run dev --workspace frontend",
+    "dev:frontend": "npm run dev --workspace frontend",
+    "dev:backend": "npm run dev --workspace backend",
+    "build": "npm run build --workspace frontend",
+    "preview": "npm run preview --workspace frontend",
+    "start": "npm run start --workspace backend"
+  },
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "amazon-clone",
+    "react",
+    "vite",
+    "express",
+    "postgresql"
+  ],
+  "author": "",
+  "license": "MIT"
+}
